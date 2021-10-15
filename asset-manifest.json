@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/subtitle-maker/static/css/main.7b675069.chunk.css",
+    "main.js": "/subtitle-maker/static/js/main.78d1ab9a.chunk.js",
+    "main.js.map": "/subtitle-maker/static/js/main.78d1ab9a.chunk.js.map",
+    "runtime-main.js": "/subtitle-maker/static/js/runtime-main.dfefc31e.js",
+    "runtime-main.js.map": "/subtitle-maker/static/js/runtime-main.dfefc31e.js.map",
+    "static/js/2.9af6ecf6.chunk.js": "/subtitle-maker/static/js/2.9af6ecf6.chunk.js",
+    "static/js/2.9af6ecf6.chunk.js.map": "/subtitle-maker/static/js/2.9af6ecf6.chunk.js.map",
+    "index.html": "/subtitle-maker/index.html",
+    "static/css/main.7b675069.chunk.css.map": "/subtitle-maker/static/css/main.7b675069.chunk.css.map",
+    "static/js/2.9af6ecf6.chunk.js.LICENSE.txt": "/subtitle-maker/static/js/2.9af6ecf6.chunk.js.LICENSE.txt",
+    "static/media/intro.f89c8be8.png": "/subtitle-maker/static/media/intro.f89c8be8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dfefc31e.js",
+    "static/js/2.9af6ecf6.chunk.js",
+    "static/css/main.7b675069.chunk.css",
+    "static/js/main.78d1ab9a.chunk.js"
+  ]
+}
