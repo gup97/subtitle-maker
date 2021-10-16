@@ -31,20 +31,16 @@ class App extends React.Component {
   handleFontsizeChange = e => {
     this.setState({ fontSize: e.target.value });
   };
-
+  handleImgChange = fileURL => {
+    this.setState({ img: fileURL });
+  };
   handleCanvasSize = e => {
     if (e.target.name === "width")
       this.setState({ width: e.target.value })
     else if (e.target.name === "height")
       this.setState({ height: e.target.value })
   };
-  handleImgChange = e => {
-    const [file] = e.target.files
-    if (file) {
-      const fileURL = URL.createObjectURL(file)
-      this.setState({ img: fileURL });
-    }
-  };
+
   createCanvas() {
     const canvas = this.canvasRef.current;
     const ctx = canvas.getContext("2d");
@@ -59,13 +55,6 @@ class App extends React.Component {
       this.setFont(canvas, text);
     }
   }
-  testDownloadBtn = e => {
-    const { href } = this.state;
-    const canvas = this.canvasRef.current;
-    const url = canvas.toDataURL();
-    href !== url && this.handleCanvasHref(url);
-  }
-
   setFont(canvas, text) {
     const ctx = canvas.getContext("2d");
     const { fontFamily, fontSize, fontColor } = this.state;
@@ -107,7 +96,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>자막생성기 BETA</h1>
-        <UploadImage onChange={this.handleImgChange} />
+        <UploadImage imageChange={this.handleImgChange} />
         <div className="canvasTab">
           <canvas ref={this.canvasRef} className="previewCanvas" />
         </div>
@@ -118,7 +107,8 @@ class App extends React.Component {
         <TextOption fontSize={this.state.fontSize}
           onChange={this.handleFontsizeChange} />
         <DownloadImage href={this.state.href}
-          onClick={this.testDownloadBtn} />
+          canvas={this.canvasRef}
+          handleCanvasHref={this.handleCanvasHref} />
       </div>
     )
   }
