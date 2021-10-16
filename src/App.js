@@ -80,7 +80,7 @@ class App extends React.Component {
     lines.forEach((line, index) => {
       // ctx.shadowColor = 'black';
       // ctx.shadowBlur = 10;
-      ctx.lineWidth = 5;
+      ctx.lineWidth = fontSize / 6;
       ctx.strokeStyle = `${textBorder}`;
       ctx.strokeText(
         line,
