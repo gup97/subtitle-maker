@@ -1,9 +1,3 @@
----
-title: '자막생성기 기능구현'
-date: 2021-12-01 09:17:00
-category: 'sub-project'
-draft: false
----
 
 
 [![미리보기](https://images.velog.io/images/gup97/post/cef5ceb6-6089-4886-bbd8-d3cd733b011c/image.png)](https://gup97.github.io/subtitle-maker/)
